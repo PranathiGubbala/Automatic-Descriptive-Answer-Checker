@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+<body>
+    <form action="/test" method="POST">
+        <textarea class="code" id="input" name="content" cols="55" rows="20" value="{{ request.form.content}}" wrap="off"></textarea>
+        <input type="submit" class="btn btn-primary" value="visualize" name="mybtn" />
+    </form>
+    <textarea class="code" id="input" name="content" cols="55" rows="20" wrap="off"></textarea>
+</body>
+</html>

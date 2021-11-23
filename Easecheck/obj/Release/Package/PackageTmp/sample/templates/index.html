@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = "login_css/vendor/bootstrap/css/bootstrap.min.css") }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = "login_css/css/main.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = "login_css/css/util.css") }}">
+    <style>
+        .wrap-login100 {
+            width: 220px;
+            background: #fff;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <a href="{{ url_for('studentLogin') }}">
+                <div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+                    <img src="{{ url_for('static', filename = "login_css/student.png") }}">
+                    <h2>Student</h2>
+                </div>
+            </a>
+
+            <pre>           </pre>
+            <a href="{{ url_for('teacherLogin') }}">
+                <div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+                    <img src="{{ url_for('static', filename = "login_css/teacher.png") }}">
+                    <h2>Teacher</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

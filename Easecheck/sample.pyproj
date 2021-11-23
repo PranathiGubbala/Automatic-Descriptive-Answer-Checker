@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3bc3de42-b81f-4862-9cae-4ff9ee214fcb</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>sample</Name>
+    <RootNamespace>sample</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="algo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fuzzy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runserver.py" />
+    <Compile Include="sample\Fuzzy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample\models\QuestionAnswer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample\models\StudentAnswer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample\models\StudentDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample\models\Subject.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample\models\TeacherDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample\models\TestDAO.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample\module2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample\models\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sample\__init__.py" />
+    <Compile Include="sample\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sample\" />
+    <Folder Include="sample\models\" />
+    <Folder Include="sample\static\" />
+    <Folder Include="sample\static\assets\" />
+    <Folder Include="sample\static\assets\css\" />
+    <Folder Include="sample\static\assets\fonts\" />
+    <Folder Include="sample\static\assets\img\" />
+    <Folder Include="sample\static\assets\img\faces\" />
+    <Folder Include="sample\static\assets\js\" />
+    <Folder Include="sample\static\assets\sass\" />
+    <Folder Include="sample\static\assets\sass\lbd\" />
+    <Folder Include="sample\static\assets\sass\lbd\mixins\" />
+    <Folder Include="sample\static\content\" />
+    <Folder Include="sample\static\fonts\" />
+    <Folder Include="sample\static\login_css\" />
+    <Folder Include="sample\static\scripts\" />
+    <Folder Include="sample\templates\" />
+    <Folder Include="sample\static\login_css\css\" />
+    <Folder Include="sample\static\login_css\fonts\" />
+    <Folder Include="sample\static\login_css\fonts\font-awesome-4.7.0\" />
+    <Folder Include="sample\static\login_css\fonts\font-awesome-4.7.0\css\" />
+    <Folder Include="sample\static\login_css\fonts\font-awesome-4.7.0\fonts\" />
+    <Folder Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\" />
+    <Folder Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\" />
+    <Folder Include="sample\static\login_css\fonts\Linearicons-Free-v1.0.0\" />
+    <Folder Include="sample\static\login_css\fonts\Linearicons-Free-v1.0.0\WebFont\" />
+    <Folder Include="sample\static\login_css\fonts\montserrat\" />
+    <Folder Include="sample\static\login_css\fonts\poppins\" />
+    <Folder Include="sample\static\login_css\fonts\raleway\" />
+    <Folder Include="sample\static\login_css\images\" />
+    <Folder Include="sample\static\login_css\images\icons\" />
+    <Folder Include="sample\static\login_css\js\" />
+    <Folder Include="sample\static\login_css\vendor\" />
+    <Folder Include="sample\static\login_css\vendor\animate\" />
+    <Folder Include="sample\static\login_css\vendor\bootstrap\" />
+    <Folder Include="sample\static\login_css\vendor\bootstrap\css\" />
+    <Folder Include="sample\static\login_css\vendor\bootstrap\js\" />
+    <Folder Include="sample\static\login_css\vendor\css-hamburgers\" />
+    <Folder Include="sample\static\login_css\vendor\jquery\" />
+    <Folder Include="sample\static\login_css\vendor\select2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sample\templates\CompareAnswers.html" />
+    <Content Include="sample\templates\StudentTestAnswers.html" />
+    <Content Include="sample\web.config" />
+    <Content Include="web.config" />
+    <None Include="EaseCheck - Web Deploy.pubxml" />
+    <Content Include="requirements.txt" />
+    <Content Include="sample\static\assets\css\animate.min.css" />
+    <Content Include="sample\static\assets\css\bootstrap.min.css" />
+    <Content Include="sample\static\assets\css\demo.css" />
+    <Content Include="sample\static\assets\css\light-bootstrap-dashboard.css" />
+    <Content Include="sample\static\assets\css\pe-icon-7-stroke.css" />
+    <Content Include="sample\static\assets\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="sample\static\assets\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="sample\static\assets\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="sample\static\assets\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="sample\static\assets\img\default-avatar.png" />
+    <Content Include="sample\static\assets\img\faces\face-0.jpg" />
+    <Content Include="sample\static\assets\img\faces\face-1.jpg" />
+    <Content Include="sample\static\assets\img\faces\face-2.jpg" />
+    <Content Include="sample\static\assets\img\faces\face-3.jpg" />
+    <Content Include="sample\static\assets\img\faces\face-4.jpg" />
+    <Content Include="sample\static\assets\img\faces\face-5.jpg" />
+    <Content Include="sample\static\assets\img\faces\face-6.jpg" />
+    <Content Include="sample\static\assets\img\faces\face-7.jpg" />
+    <Content Include="sample\static\assets\img\faces\tim_vector.jpe" />
+    <Content Include="sample\static\assets\img\favicon.ico" />
+    <Content Include="sample\static\assets\img\full-screen-image-3.jpg" />
+    <Content Include="sample\static\assets\img\loading-bubbles.svg" />
+    <Content Include="sample\static\assets\img\mask.png" />
+    <Content Include="sample\static\assets\img\new_logo.png" />
+    <Content Include="sample\static\assets\img\sidebar-1.jpg" />
+    <Content Include="sample\static\assets\img\sidebar-2.jpg" />
+    <Content Include="sample\static\assets\img\sidebar-3.jpg" />
+    <Content Include="sample\static\assets\img\sidebar-4.jpg" />
+    <Content Include="sample\static\assets\img\sidebar-5.jpg" />
+    <Content Include="sample\static\assets\img\tim_80x80.png" />
+    <Content Include="sample\static\assets\js\bootstrap-notify.js" />
+    <Content Include="sample\static\assets\js\bootstrap-select.js" />
+    <Content Include="sample\static\assets\js\bootstrap.min.js" />
+    <Content Include="sample\static\assets\js\chartist.min.js" />
+    <Content Include="sample\static\assets\js\demo.js" />
+    <Content Include="sample\static\assets\js\jquery.3.2.1.min.js" />
+    <Content Include="sample\static\assets\js\light-bootstrap-dashboard.js" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_buttons.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_cards.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_chartist.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_icons.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_inputs.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_labels.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_morphing-buttons.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_navbars.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_social-buttons.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_tabs.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_transparency.scss" />
+    <Content Include="sample\static\assets\sass\lbd\mixins\_vendor-prefixes.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_alerts.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_buttons.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_cards.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_chartist.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_checkbox-radio-switch.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_dropdown.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_footers.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_inputs.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_misc.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_mixins.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_navbars.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_responsive.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_sidebar-and-main-panel.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_tables.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_typography.scss" />
+    <Content Include="sample\static\assets\sass\lbd\_variables.scss" />
+    <Content Include="sample\static\assets\sass\light-bootstrap-dashboard.scss" />
+    <Content Include="sample\static\content\bootstrap.css" />
+    <Content Include="sample\static\content\bootstrap.min.css" />
+    <Content Include="sample\static\content\site.css" />
+    <Content Include="sample\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="sample\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="sample\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="sample\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="sample\static\scripts\bootstrap.js" />
+    <Content Include="sample\static\scripts\bootstrap.min.js" />
+    <Content Include="sample\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="sample\static\scripts\jquery-1.10.2.js" />
+    <Content Include="sample\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="sample\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="sample\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="sample\static\scripts\jquery.validate.js" />
+    <Content Include="sample\static\scripts\jquery.validate.min.js" />
+    <Content Include="sample\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="sample\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="sample\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="sample\static\scripts\respond.js" />
+    <Content Include="sample\static\scripts\respond.min.js" />
+    <Content Include="sample\static\scripts\_references.js" />
+    <Content Include="sample\templates\about.html" />
+    <Content Include="sample\templates\AllStudentSubject.html" />
+    <Content Include="sample\templates\AllSubjects.html" />
+    <Content Include="sample\templates\ClassScore.html" />
+    <Content Include="sample\templates\ClassTestsScore.html" />
+    <Content Include="sample\static\login_css\css\main.css" />
+    <Content Include="sample\static\login_css\css\util.css" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="sample\static\login_css\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="sample\static\login_css\fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="sample\static\login_css\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.eot" />
+    <Content Include="sample\static\login_css\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.svg" />
+    <Content Include="sample\static\login_css\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="sample\static\login_css\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff" />
+    <Content Include="sample\static\login_css\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.woff2" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\montserrat\OFL.txt" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="sample\static\login_css\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\OFL.txt" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-Black.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-BlackItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-Bold.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-BoldItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-ExtraBold.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-ExtraBoldItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-ExtraLight.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-ExtraLightItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-Italic.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-Light.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-LightItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-Medium.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-MediumItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-Regular.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-SemiBold.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-SemiBoldItalic.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-Thin.ttf" />
+    <Content Include="sample\static\login_css\fonts\raleway\Raleway-ThinItalic.ttf" />
+    <Content Include="sample\templates\GettingStarted.html" />
+    <Content Include="sample\templates\GrandScore.html" />
+    <Content Include="sample\templates\helpStudent.html" />
+    <Content Include="sample\templates\helpTeacher.html" />
+    <Content Include="sample\templates\editQA.html" />
+    <Content Include="sample\templates\HomePageBG.png" />
+    <Content Include="sample\static\login_css\images\icons\favicon.ico" />
+    <Content Include="sample\static\login_css\images\img-01.png" />
+    <Content Include="sample\templates\index.html" />
+    <Content Include="sample\templates\IndividualScore.html" />
+    <Content Include="sample\static\login_css\js\main.js" />
+    <Content Include="sample\templates\layout.html" />
+    <Content Include="sample\templates\MyScore.html" />
+    <Content Include="sample\templates\navBar.html" />
+    <Content Include="sample\templates\questionAnswer.html" />
+    <Content Include="sample\templates\RegisterSubject.html" />
+    <Content Include="sample\templates\SelectSubject.html" />
+    <Content Include="sample\static\login_css\student.png" />
+    <Content Include="sample\templates\studentLayout.html" />
+    <Content Include="sample\templates\studentLogin.html" />
+    <Content Include="sample\templates\Students.html" />
+    <Content Include="sample\templates\StudentSignUp.html" />
+    <Content Include="sample\templates\StudentTests.html" />
+    <Content Include="sample\templates\StudentTestsScore.html" />
+    <Content Include="sample\templates\studTestQuestionAnswer.html" />
+    <Content Include="sample\static\login_css\teacher.png" />
+    <Content Include="sample\templates\teacherLogin.html" />
+    <Content Include="sample\templates\teacherSignup.html" />
+    <Content Include="sample\templates\teacherStart.html" />
+    <Content Include="sample\templates\TeacherTests.html" />
+    <Content Include="sample\templates\TestDetails.html" />
+    <Content Include="sample\templates\testForScore.html" />
+    <Content Include="sample\templates\TestPage.html" />
+    <Content Include="sample\templates\testQuestionAnswer.html" />
+    <Content Include="sample\templates\Tests.html" />
+    <Content Include="sample\templates\UpdateStudent.html" />
+    <Content Include="sample\templates\UpdateTeacher.html" />
+    <Content Include="sample\static\login_css\vendor\animate\animate.css" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\js\popper.js" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="sample\static\login_css\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="sample\static\login_css\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="sample\static\login_css\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="sample\static\login_css\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="sample\static\login_css\vendor\select2\select2.css" />
+    <Content Include="sample\static\login_css\vendor\select2\select2.js" />
+    <Content Include="sample\static\login_css\vendor\select2\select2.min.css" />
+    <Content Include="sample\static\login_css\vendor\select2\select2.min.js" />
+    <Content Include="sample\templates\viewStudents.html" />
+    <Content Include="sample\templates\viewTest.html" />
+    <Content Include="sample\templates\Login.html" />
+    <Content Include="SmartStoplist.txt">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
